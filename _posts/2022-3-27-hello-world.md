@@ -11,5 +11,5 @@ printf("Hello, world!\n");
 {% endhighlight %}
 
 {% highlight Python %}
-print("Hello, world!)
+print("Hello, world!")
 {% endhighlight %}
