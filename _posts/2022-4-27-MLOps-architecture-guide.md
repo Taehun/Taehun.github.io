@@ -2,6 +2,7 @@
 layout: post
 title: "[번역] MLOps 아키텍처 가이드"
 categories: mlops
+tags: [mlops, 번역]
 ---
 
 - _원본 기사> [MLOps Architecture Guide](https://neptune.ai/blog/mlops-architecture-guide)_

@@ -2,6 +2,7 @@
 layout: post
 title: "MLOps 소개"
 categories: mlops
+tags: [mlops]
 ---
 
 ## MLOps 정의
