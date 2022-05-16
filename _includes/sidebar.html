@@ -32,6 +32,12 @@
   </ul>
 </div>
 
+{% if site.bio -%}
+<div class="sidebar-section">
+    {{ site.bio }}
+</div>
+{%- endif %}
+
 {% if site.subscribe != false -%}
 <div class="sidebar-section feed-subscribe">
   <a href="{{ 'feed.xml' | relative_url }}">
