@@ -4,6 +4,7 @@ title: "글쓰는 개발자 모임, 글또 7기를 시작하면서"
 categories: general
 tags: [글또]
 toc: true
+comments: true
 ---
 
 <p align="center" style="font-size:20px;">

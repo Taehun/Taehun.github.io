@@ -4,6 +4,7 @@ title: "MLOps 소개"
 categories: mlops
 tags: [mlops]
 toc: true
+comments: true
 ---
 
 ## MLOps 정의
