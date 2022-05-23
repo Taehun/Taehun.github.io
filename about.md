@@ -17,8 +17,8 @@ permalink: /about/
 2008년부터 2017년까지 임베디드 소프트웨어 개발자로 일을 했었습니다. 다음과 같은 업무를 주로 했었습니다:
 
 - 리눅스 기반 BSP (Board Support Package)
-  - 부트로더
-  - 리눅스 커널
-  - 리눅스 디바이스 드라이버
+  - 부트로더 포팅
+  - 리눅스 커널 포팅
+  - 리눅스 디바이스 드라이버 개발
   - 임베디드 리눅스 배포판 제작 - Ubuntu or Debian
-  - AOSP (Android Open Source Platform)
+  - AOSP (Android Open Source Platform) 포팅
