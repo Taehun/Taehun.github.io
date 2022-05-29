@@ -256,7 +256,7 @@ names: [ 'car', 'truck', 'pedestrian', 'bicyclist', 'light' ]  # class names
 
 ### 모델 선택
 
-이 기사 초반부에 YOLOv5 모델 네트워크 크기에 따라 추론 속도 및 정확도에 대한 그래프를 첨부 하였습니다. 추론 속도와 정확도는 트레이드오프이므로 ML 어플리케이션에 따라 적절한 모델을 선택해서 사용하시기 바랍니다.
+이 기사 초반부에 YOLOv5 모델 네트워크 크기에 따른 추론 속도 및 정확도에 대한 그래프를 첨부 하였습니다. 추론 속도와 정확도는 트레이드오프이므로 ML 어플리케이션에 따라 적절한 모델을 선택해서 사용하시기 바랍니다.
 
 ![YOLOv5 모델 종류](https://github.com/ultralytics/yolov5/releases/download/v1.0/model_comparison.png)
 
@@ -265,10 +265,10 @@ names: [ 'car', 'truck', 'pedestrian', 'bicyclist', 'light' ]  # class names
 YOLOv5에는 `train.py`라는 모델 학습에 사용하는 파이썬 스크립트가 포함되어 있습니다. 지금까지 준비한 커스텀 데이터셋 (`.jpg`, `.txt`)과 데이터셋 설정 파일 (`custom_dataset.yaml`)을 사용하여 `train.py` 스크립트로 모델 학습을 수행합니다:
 
 ```shell
-python train.py --batch 16 --epochs 10 --data custom_dataset.yaml --weights yolov5s.pt
+python train.py --batch-size 16 --epochs 10 --data custom_dataset.yaml --weights yolov5s.pt
 ```
 
-- `--batch` 옵션은 모델 학습시 한번에 처리할 배치 크기를 의미합니다. 이 옵션 값이 클수록 모델 학습 시간이 단축 됩니다. GPU 메모리 크기에 맞춰 설정합니다.
+- `--batch-size` 옵션은 모델 학습시 한번에 처리할 배치 크기를 의미합니다. 이 옵션 값이 클수록 모델 학습 시간이 단축 됩니다. GPU 메모리 크기에 맞춰 설정합니다.
 - `--epochs` 옵션은 학습 데이터셋이 모델을 통과한 횟수를 의미합니다. 이 값이 클수록 학습 시간이 길어지며 모델은 학습 데이터셋에 피팅 됩니다.
 - `--weights` 옵션은 학습에 사용할 PyTorch 모델 체크포인트 파일을 의미 합니다. (`yolov5n.pt`/`yolov5s.pt`/`yolov5m.pt`/`yolov5l.pt`/`yolov5x.pt`)
 - `--data` 옵션은 앞서 생성한 데이터셋 설정 파일 지정 옵션 입니다.
