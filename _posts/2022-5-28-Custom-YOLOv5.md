@@ -265,7 +265,7 @@ names: [ 'car', 'truck', 'pedestrian', 'bicyclist', 'light' ]  # class names
 YOLOv5에는 `train.py`라는 모델 학습에 사용하는 파이썬 스크립트가 포함되어 있습니다. 지금까지 준비한 커스텀 데이터셋 (`.jpg`, `.txt`)과 데이터셋 설정 파일 (`custom_dataset.yaml`)을 사용하여 `train.py` 스크립트로 모델 학습을 수행합니다:
 
 ```shell
-python train.py --batch-size 16 --epochs 10 --data custom_dataset.yaml --weights yolov5s.pt
+python train.py --batch-size 16 --epochs 10 --data custom_dataset.yaml --weights yolov5n.pt
 ```
 
 - `--batch-size` 옵션은 모델 학습시 한번에 처리할 배치 크기를 의미합니다. 이 옵션 값이 클수록 모델 학습 시간이 단축 됩니다. GPU 메모리 크기에 맞춰 설정합니다.
