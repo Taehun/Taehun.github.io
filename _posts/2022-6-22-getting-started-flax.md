@@ -11,9 +11,9 @@ comments: true
 
 ## 개요
 
-[JAX](https://github.com/google/jax)가 출시된지 2년이 지나면서 완성도가 많이 높아졌습니다. 이제는 실험 단계를 넘어 상용 모델 개발에 JAX 도입을 검토해 볼만한 단계가 되지 않았나 싶습니다. DeepMind나 Hugging Face와 같은 AI 업계를 선도하는 회사들은 이미 JAX로 이전했거나 이전하고 있는 과정에 있기도 하구요. ([참고링크1](https://www.deepmind.com/blog/using-jax-to-accelerate-our-research), [참고링크2](https://twitter.com/huggingface/status/1331255460033400834))
+[JAX](https://github.com/google/jax)가 출시된지 2년이 지나면서 완성도가 많이 높아졌습니다. 이제는 실험 단계를 넘어 상용 모델 개발에 JAX 도입을 검토해 볼만한 단계가 온 것 같습니다. DeepMind나 Hugging Face와 같은 AI 업계를 선도하는 회사들은 이미 JAX로 이전했거나 이전하고 있는 과정에 있기도 하구요. ([참고링크1](https://www.deepmind.com/blog/using-jax-to-accelerate-our-research), [참고링크2](https://twitter.com/huggingface/status/1331255460033400834))
 
-이 기사에는 [Flax](https://github.com/google/flax)라는 JAX용 딥러닝 라이브러리를 사용하여, 간단한 딥러닝 모델을 만드는 방법을 다룹니다. Flax의 API는 개발자 경험 (DX, Developer Experience) 고려해서 기존 Tensorflow나 PyTorch 경험이 있으신 분이면 쉽게 익힐 수 있습니다.
+이 기사에는 [Flax](https://github.com/google/flax)라는 JAX용 딥러닝 라이브러리를 사용하여, 간단한 딥러닝 모델을 만드는 방법을 다룹니다. Flax의 API는 딥러닝 개발자 경험 (DX, Developer Experience) 고려하여 개발 되었기에 기존 Tensorflow나 PyTorch 경험이 있는 분이면 쉽게 익힐 수 있습니다.
 
 ### JAX
 
@@ -35,7 +35,7 @@ JAX는 다음과 같은 강력한 기본 요소들이 제공됩니다:
 Flax는 JAX 팀과 긴밀히 협력하여 개발 중이며 다음과 같은 딥러닝 연구를 시작하는 데 필요한 모든 것이 제공됩니다:
 
 - **신경망 API (`flax.linen`)**: Dense, Conv, Batch/Layer/Group 정규화, Attention, Pooling, LSTM/GRU 셀, Dropout
-- **유틸리티 및 패턴**: 복제된 교육, 직렬화 및 체크포인트, 메트릭, 장치에서 사전 검색
+- **유틸리티 및 패턴**: 복제된 학습, 직렬화 및 체크포인트, 메트릭, 장치에서 사전 검색
 - 즉시 사용할 수 있는 **학습 예제**: MNIST, LSTM seq2seq, GNN (Graph Neural Networks), 시퀀스 태깅
 - **빠르고 튜닝된 대규모 종단간 예제**: CIFAR10, ImageNet의 ResNet, Transformer LM1b
 
@@ -428,7 +428,7 @@ plt.show()
 
 ## 결론
 
-위 예제에서 확인 할 수 있듯이 Flax는 기존 Tensorflow (Keras)와 PyTorch 예제에서 많이 보던 것들이 많습니다. PRNGKey와 같이 생소한 개념도 있지만, 손실 함수를 정의하고, 옵티마이저를 어떤 것을 사용할지 설정하는 것들은 익숙한 코드 입니다. 이 기사 첫 부분에도 언급하였지만 JAX는 이미 상용 프로젝트에 적용 할 수 있을만큼 많이 성숙한 상태 입니다. 빠르게 변하는 시대에 뒤쳐지지 않으려면 지금부터라도 JAX와 Flax 학습을 시작하는게 어떨까요? PyTorch는 몰라도 Tensorflow는 이제는 놓아줄때가 온 것이 아닌가 싶습니다. 좀 더 많은 내용은 아래 JAX와 Flax 공식 문서를 참조하시기 바랍니다.
+위 예제에서 확인 할 수 있듯이 Flax 사용법은 기존 Tensorflow와 PyTorch 예제에서 많이 접했던 것들이 입니다. PRNGKey와 같이 새로운 것도 있지만, 손실 함수 및 옵티마이저 설정 하는 것은 이미 익숙한 코드 입니다. 이 기사 첫 부분에도 언급 하였지만 JAX는 이미 상용 프로젝트에 적용 할 수 있을만큼의 완성도가 많이 높아져서 지금부터라도 준비해서 JAX의 강점을 직접 경험해 보시기 바랍니다. Flax/JAX 모델의 최적화나 배포 관련 부분은 아직 부족하지만, 다른 배포 포맷으로 변환해서 사용하면 해결할 수 있습니다. 좀 더 많은 내용은 아래 JAX와 Flax 공식 문서를 참조하시기 바랍니다.
 
 - [Flax 공식 문서](https://flax.readthedocs.io/en/latest/)
 - [JAX 공식 문서](https://jax.readthedocs.io/en/latest/)
