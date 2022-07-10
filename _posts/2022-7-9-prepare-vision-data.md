@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 데이터 라벨링 자동화 아키텍처
+title: 비전 데이터셋 아키텍처
 categories: mlops
-tags: [Deep Learing, GCP, mlops]
+tags: [Deep Learing, GCP, mlops, labeling]
 toc: true
 comments: true
 excerpt_separator: <!--more-->
