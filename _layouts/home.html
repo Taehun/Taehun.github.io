@@ -34,6 +34,9 @@ layout: default
         </p>
         {%- if post.show_excerpts != false -%}
           <div class="post-excerpt">{{ post.excerpt | strip_html }}</div>
+          {% if post.excerpt != post.content %}
+            <a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
+          {% endif %}
         {%- endif -%}
       </li>
       {%- endfor -%}
