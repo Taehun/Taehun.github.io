@@ -42,3 +42,5 @@ lang: ko
 
 # Google Analytics
 google_analytics: G-9TM0JNV0ZK
+
+excerpt_separator: <!--more-->

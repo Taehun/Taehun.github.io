@@ -5,6 +5,7 @@ categories: mlops
 tags: [mlops, 번역]
 toc: true
 comments: true
+excerpt_separator: <!--more-->
 ---
 
 - _원본 기사> [MLOps Architecture Guide](https://neptune.ai/blog/mlops-architecture-guide)_
@@ -12,6 +13,8 @@ comments: true
 성공적인 머신러닝 프로젝트는 작동하는 앱을 배포하는 것만이 아닙니다. 긍정적인 비즈니스 가치를 제공하고 이를 지속적으로 유지하는 것입니다.
 
 많은 머신 러닝 프로젝트를 수행하다 보면, 일부는 개발 중에는 잘 작동하지만 프로덕션에는 도달하지 못하는 것을 발견합니다. 다른 프로젝트는 프로덕션 단계에 있긴 하지만 사용자 요구에 맞게 확장이 안됩니다. 또 다른 프로젝트는 규모가 커진 후에는 너무 많은 비용이 들어서 수익을 창출하지 못합니다.
+
+<!--more-->
 
 ![ML_Expected_Plan](https://i0.wp.com/neptune.ai/wp-content/uploads/MLOps-architecture.jpg?resize=650%2C500&ssl=1)
 

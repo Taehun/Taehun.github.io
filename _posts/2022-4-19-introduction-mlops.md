@@ -5,6 +5,7 @@ categories: mlops
 tags: [mlops]
 toc: true
 comments: true
+excerpt_separator: <!--more-->
 ---
 
 ## MLOps 정의
@@ -12,6 +13,8 @@ comments: true
 **MLOps (Machine Learning + Operation)** 를 한마디로 정의하면 *머신러닝 어플리케이션에 DevOps 원칙을 적용 한 것*이라고 할 수 있습니다. (by [MLOps Sig](https://github.com/cdfoundation/sig-mlops/blob/master/roadmap/2020/MLOpsRoadmap2020.md)) MLOps에서는 머신러닝 모델을 학습하고 추론하기 위한 워크플로우 및 시스템을 개발하고 운영합니다. 다른 의미로 MLOps는 *프로덕션 환경에서 머신러닝 모델을 안정적이고 효율적으로 배포 및 유지 관리하는 것을 목표로 한 일종의 관행*으로 볼 수 있습니다. (by [Breuel](https://towardsdatascience.com/ml-ops-machine-learning-as-an-engineering-discipline-b86ca4874a3f))
 
 DevOps가 개발/QA/운영의 교차점이라면, MLOps는 머신러닝/데이터 엔지니어링/DevOps의 교차점 입니다. 이러한 관점에서 MLOps는 *머신러닝, DevOps 및 데이터 엔지니어링을 결합한 일련의 방식으로 프로덕션 환경에서 ML 시스템을 안정적이고 효율적으로 배포 및 유지 관리하는 것*이라고 할 수 있습니다.
+
+<!--more-->
 
 ![DevOpsMLOps](https://github.com/Taehun/taehun.github.io/blob/master/imgs/devops_mlops.png?raw=true)
 

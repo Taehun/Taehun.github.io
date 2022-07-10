@@ -5,6 +5,7 @@ categories: deep_learning
 tags: [Deep Learing, Flax, JAX]
 toc: true
 comments: true
+excerpt_separator: <!--more-->
 ---
 
 > ~~_"플렉스 해버렸지 뭐야"_~~
@@ -14,6 +15,8 @@ comments: true
 [JAX](https://github.com/google/jax)가 출시된지 2년이 지나면서 완성도가 많이 높아졌습니다. 이제는 실험 단계를 넘어 상용 모델 개발에 JAX 도입을 검토해 볼만한 단계가 온 것 같습니다. DeepMind나 Hugging Face와 같은 AI 업계를 선도하는 회사들은 이미 JAX로 이전했거나 이전하고 있는 과정에 있기도 하구요. ([참고링크1](https://www.deepmind.com/blog/using-jax-to-accelerate-our-research), [참고링크2](https://twitter.com/huggingface/status/1331255460033400834))
 
 이 기사에는 [Flax](https://github.com/google/flax)라는 JAX용 딥러닝 라이브러리를 사용하여, 간단한 딥러닝 모델을 만드는 방법을 다룹니다. Flax의 API는 딥러닝 개발자 경험 (DX, Developer Experience) 고려하여 개발 되었기에 기존 Tensorflow나 PyTorch 경험이 있는 분이면 쉽게 익힐 수 있습니다.
+
+<!--more-->
 
 ### JAX
 
