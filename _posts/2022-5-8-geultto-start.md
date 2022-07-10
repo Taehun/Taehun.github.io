@@ -9,7 +9,7 @@ excerpt_separator: <!--more-->
 ---
 
 <p align="center" style="font-size:20px;">
-  <img src="https://github.com/Taehun/taehun.github.io/blob/master/imgs/geultto_logo.png?raw=true" /><br/>
+  <img src="https://github.com/Taehun/taehun.github.io/blob/main/imgs/geultto_logo.png?raw=true" /><br/>
 </p>
 
 업무상 혹은 개인적인 관심사로 인해 인터넷 검색을 하다 보면 동종 업계에 종사하시는 분들의 블로그에서 도움이 되는 글을 발견할 때가 많습니다. 그런 글을 볼 때마다 새삼 고마움을 느끼면서도 저 자신의 경험과 노하우들도 글로서 정리하여 공유하면 좋겠다는 생각이 들었습니다. 최근에 이런 생각으로만 머물러 있던 *'꾸준한 글쓰기'*를 드디어 실천에 옮기게 된 계기가 생겼습니다.

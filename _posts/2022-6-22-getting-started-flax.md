@@ -204,7 +204,7 @@ for i in range(25):
 plt.show()
 ```
 
-![Train data](https://github.com/Taehun/taehun.github.io/blob/master/imgs/train_result.jpg?raw=true)
+![Train data](https://github.com/Taehun/taehun.github.io/blob/main/imgs/train_result.jpg?raw=true)
 
 ### 네트워크 정의
 
@@ -427,7 +427,7 @@ plt.show()
 
 ```
 
-![Test result](https://github.com/Taehun/taehun.github.io/blob/master/imgs/test_result.jpg?raw=true)
+![Test result](https://github.com/Taehun/taehun.github.io/blob/main/imgs/test_result.jpg?raw=true)
 
 ## 결론
 

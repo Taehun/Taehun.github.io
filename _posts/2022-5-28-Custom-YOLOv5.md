@@ -49,7 +49,7 @@ open runs/detect/exp/680e8885-1556-4710-aa94-ba80f5ab4f49.jpg # MacOS
 # eog runs/detect/exp/680e8885-1556-4710-aa94-ba80f5ab4f49.jpg # Ubuntu
 ```
 
-![간단한 추론 결과](https://github.com/Taehun/taehun.github.io/blob/master/imgs/simple_inference_result.jpg?raw=true)
+![간단한 추론 결과](https://github.com/Taehun/taehun.github.io/blob/main/imgs/simple_inference_result.jpg?raw=true)
 
 YOLOv5에는 간단하게 YOLOv5 모델 추론을 테스트 할 수 있는 `detect.py` 파이썬 스크립트 파일이 포함되어 있습니다. 이 스크립트를 실행하여 모델 추론시 필요한 모델 파일은 [최신 YOLOv5 릴리즈](https://github.com/ultralytics/yolov5/releases)에서 자동으로 다운로드 됩니다. 추론 후 결과는 `runs/detect/exp[실험 번호]` 폴더에 기록됩니다. 사용법은 다음과 같습니다:
 
@@ -83,7 +83,7 @@ results.print()  # or .show(), .save(), .crop(), .pandas(), etc.
 
 ## 데이터 수집
 
-<img src="https://github.com/Taehun/taehun.github.io/blob/master/imgs/data_collection.png?raw=true" alt="drawing" width="500"/>
+<img src="https://github.com/Taehun/taehun.github.io/blob/main/imgs/data_collection.png?raw=true" alt="drawing" width="500"/>
 
 YOLOv5 객체 감지 모델 학습에 사용하는 데이터셋은 다양한 방식으로 마련할 수 있습니다. 제품에서 사용할 이미지와 유사한 공개 데이터셋을 사용하거나 비공개 데이터셋을 구매해서 사용 할 수도 있을것 입니다. (공개 데이터셋 사용시에는 라이센스 위반 여부를 반드시 확인후 사용하시기 바랍니다.) 아니면, 제품에서 사용할 데이터를 직접 수집하여 학습 할 수도 있을 것 입니다. 여기서는 커스텀 데이터셋으로 YOLOv5 모델 학습하는 내용이므로 직접 수집한 데이터라고 가정 하겠습니다.
 
@@ -284,8 +284,8 @@ python train.py --batch-size 16 --epochs 10 --data custom_dataset.yaml --weights
 
 - 클래스 분포와 학습 데이터 배치 시각화
 
-![라벨 분포](https://github.com/Taehun/taehun.github.io/blob/master/imgs/labels.jpg?raw=true)
-![학습 데이터 배치0](https://github.com/Taehun/taehun.github.io/blob/master/imgs/train_batch0.jpg?raw=true)
+![라벨 분포](https://github.com/Taehun/taehun.github.io/blob/main/imgs/labels.jpg?raw=true)
+![학습 데이터 배치0](https://github.com/Taehun/taehun.github.io/blob/main/imgs/train_batch0.jpg?raw=true)
 
 학습 결과는 `runs/train/exp[실험번호]/results.csv` 파일에 저장되어 있습니다.
 
@@ -294,7 +294,7 @@ from utils.plots import plot_results
 plot_results('./runs/train/exp/results.csv')  # plot 'results.csv' as 'results.png'
 ```
 
-![학습 결과 예시](https://github.com/Taehun/taehun.github.io/blob/master/imgs/results.png?raw=true)
+![학습 결과 예시](https://github.com/Taehun/taehun.github.io/blob/main/imgs/results.png?raw=true)
 
 ### 학습된 모델 추론 테스트
 
@@ -308,7 +308,7 @@ python detect.py --source ../datasets/sample_dataset/images/1479503426306710339.
 open runs/detect/exp2/1479503426306710339.jpg
 ```
 
-![추론 결과 예시2](https://github.com/Taehun/taehun.github.io/blob/master/imgs/inference_test.jpg?raw=true)
+![추론 결과 예시2](https://github.com/Taehun/taehun.github.io/blob/main/imgs/inference_test.jpg?raw=true)
 
 ## 참고링크
 

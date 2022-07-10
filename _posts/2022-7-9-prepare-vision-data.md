@@ -22,7 +22,7 @@ AI 선도 업체들은 이미 *[반지도 학습 (Semi-supervised Learning)](htt
 
 ## 비전 데이터셋 아키텍처 on GCP
 
-![Data Labeling Process](https://github.com/Taehun/taehun.github.io/blob/master/imgs/labeling-process-gcp.png?raw=true)
+![Data Labeling Process](https://github.com/Taehun/taehun.github.io/blob/main/imgs/labeling-process-gcp.png?raw=true)
 
 _<center>딥러닝 비전 데이터셋 아키텍처 (GCP)</center>_
 
@@ -234,7 +234,7 @@ GCP에서 가장 기본적인 비전 데이터셋 아키텍처를 구성해 보�
 - `Cloud Pub/Sub` -> `RabbitMQ`
 - `Cloud Dataflow` -> `Apache Beam`
 
-![Mixed Data Labeling Process](https://github.com/Taehun/taehun.github.io/blob/master/imgs/labeling-process-mixed.png?raw=true)
+![Mixed Data Labeling Process](https://github.com/Taehun/taehun.github.io/blob/main/imgs/labeling-process-mixed.png?raw=true)
 
 _<center>딥러닝 비전 데이터셋 아키텍처 (On-premise + GCP)</center>_
 

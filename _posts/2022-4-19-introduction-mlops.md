@@ -16,7 +16,7 @@ DevOps가 개발/QA/운영의 교차점이라면, MLOps는 머신러닝/데이�
 
 <!--more-->
 
-![DevOpsMLOps](https://github.com/Taehun/taehun.github.io/blob/master/imgs/devops_mlops.png?raw=true)
+![DevOpsMLOps](https://github.com/Taehun/taehun.github.io/blob/main/imgs/devops_mlops.png?raw=true)
 
 - 그림 1. DevOps와 MLOps
 
@@ -24,7 +24,7 @@ DevOps가 개발/QA/운영의 교차점이라면, MLOps는 머신러닝/데이�
 
 ## End-to-End 머신러닝 워크플로우
 
-![ML Workflow](https://github.com/Taehun/taehun.github.io/blob/master/imgs/ml-workflow.png?raw=true)
+![ML Workflow](https://github.com/Taehun/taehun.github.io/blob/main/imgs/ml-workflow.png?raw=true)
 
 - 그림 2. End-to-End 머신러닝 워크플로우
 
@@ -97,7 +97,7 @@ MLOps에는 ML 파이프라인을 포함하여 머신러닝 모델을 제품화�
 
 MLOps는 작년(2021년)부터 업계 종사자들에게 널리 알려지기 시작 했습니다. MLOps 대중화의 시발점이 된 것은 AI 업계의 대부이신 Andrew Ng 교수님의 ["MLOps: From Model-centric to Data-centric AI"](https://www.youtube.com/watch?v=06-AZXmwHjo&t=1s) 온라인 세미나 였습니다. 세미나 제목에서 유추 할 수 있듯이 머신러닝 프로젝트에서 데이터의 중요성을 강조하는 세미나 입니다.
 
-![Code+Data](https://github.com/Taehun/taehun.github.io/blob/master/imgs/software-vs-mlmodel.png?raw=true)
+![Code+Data](https://github.com/Taehun/taehun.github.io/blob/main/imgs/software-vs-mlmodel.png?raw=true)
 
 - 그림 4. 소프트웨어와 머신러닝 모델에서 코드와 데이터
 
