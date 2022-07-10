@@ -86,8 +86,12 @@ layout: default
     </nav>
   </footer>
 
-  {% if page.comments != false and jekyll.environment == "production" and site.disqus %}
-    {% include disqus.html %}
-  {% endif %}
-  
+  <script src="https://utteranc.es/client.js"
+          repo="Taehun/taehun.github.io"
+          issue-term="url"
+          theme="github-light"
+          crossorigin="anonymous"
+          async>
+  </script>
+
 </article>
