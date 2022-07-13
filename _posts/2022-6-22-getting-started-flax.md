@@ -42,6 +42,21 @@ Flax는 JAX 팀과 긴밀히 협력하여 개발 중이며 다음과 같은 딥�
 - 즉시 사용할 수 있는 **학습 예제**: MNIST, LSTM seq2seq, GNN (Graph Neural Networks), 시퀀스 태깅
 - **빠르고 튜닝된 대규모 종단간 예제**: CIFAR10, ImageNet의 ResNet, Transformer LM1b
 
+### Flax를 배워야 하는 이유
+
+> 2022-7-13일에 추가한 내용 입니다.
+
+이미 PyTorch나 Tensorflow로 딥러닝 연구 & 개발을 잘하고 있는데 왜 Flax를 배워야 할까요?
+
+- Flax의 모델 정의는 기존 딥러닝 프레임웍과 거의 차이가 없습니다.
+- Flax는 설계상 매우 유연하고 확장 가능합니다.
+- **코드 변경 없이 [TPU](https://cloud.google.com/tpu?hl=ko) 학습이 가능합니다.**
+- GPU 학습시 입력 데이터가 크면 PyTorch에 비해 학습 시간이 빠릅니다. ([참고링크](https://github.com/google/jax/discussions/8497#discussioncomment-1626017))
+
+현재까지는 Flax에는 데이터 로드 및 처리 기능이 없어서 PyTorch의 [DataLoader](https://pytorch.org/docs/stable/data.html#torch.utils.data.DataLoader)나 [transpose](https://pytorch.org/docs/stable/generated/torch.transpose.html) 같은 것을 JAX와 조합하여 직접 구현해야하는 불편함이 있습니다. 하지만, 위와 같은 장점들이 있으므로 시간을 들여 한번쯤 학습을 하는건 나쁘지 않다고 생각합니다. 특히, 자연어 처리를 위해 Transformer 계열 모델을 실험 하시는 분께 추천 드립니다.
+
+- Flax Transformer 예제: [Fine-tuning a 🤗 Transformers model on TPU with Flax/JAX](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/text_classification_flax.ipynb)
+
 ## 의류 이미지 분류 예제
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1kUtM8o62QPP0BkzXHPmHmXgsdPOmBynd?usp)
