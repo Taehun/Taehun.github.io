@@ -364,6 +364,6 @@ print(f"Image similaraty is {ssim_measures}")
 
 ## 정리
 
-처음 이 글을 작성할 때는 기본은 지키되 최대한 단순한 아키텍처를 제시하고 예제를 추가하려고 했습니다. 그 **기본**에 해당되는 부분이 생각보다 많네요. 인프라 코드 작성하고, Dataflow로 데이터 파이프라인 예제 만들고 하는데 아직 부족한 점이 많아서 시간이 많이 걸렸습니다. 특히, 이번에 Apache Beam은 이번에 처음 써보았는데 꽤나 진입 장벽이 있어서 어려웠습니다. (Apache Beam 고수 분들의 많은 피드백 부탁드립니다.) 
+처음 이 글을 작성할 때는 기본은 지키되 최대한 단순한 아키텍처를 제시하고 예제를 추가하려고 했습니다. 그 **기본**에 해당되는 부분이 생각보다 많네요. 인프라 코드 작성하고, Dataflow로 데이터 파이프라인 예제 만드는데 아직 부족한 점이 많아서 시간이 많이 걸렸습니다. 특히, Apache Beam은 이번에 처음 써보았는데 꽤나 진입 장벽이 있어서 어려웠습니다. (Apache Beam 고수 분들의 많은 피드백 부탁드립니다.) 
 
-이 글을 작성하면서 만든 [vision-dataset-sample-infra 저장소](https://github.com/Taehun/vision-dataset-sample-infra)는 [Label Studio](https://github.com/heartexlabs/label-studio)와 같은 오픈 소스 라벨링 솔루션과 연동해서 사용 할 수 있도록 시간날때 업데이트 할 예정입니다. 뒷 부분에 BigQuery와 연동하여 데이터 분석 환경 제공하고, Vertex AI와 연동해서 ML 파이프라인과도 붙이면 좋을것 같아요. 기회가 된다면 이런 데이터 분석 환경 및 MLOps 환경도 추가해보도록 하겠습니다. (보장은 못드립니다. 바쁘면 안할지도...)
+이 글을 작성하면서 만든 [vision-dataset-sample-infra 저장소](https://github.com/Taehun/vision-dataset-sample-infra)는 [Label Studio](https://github.com/heartexlabs/label-studio)와 같은 오픈 소스 라벨링 툴과 연동해서 사용 할 수 있도록 시간날때 업데이트 할 예정입니다. BigQuery와 연동하여 데이터 분석 환경 제공하고, Vertex AI와 연동해서 ML 파이프라인도 붙이면 End-to-end 완성이네요! 기회가 된다면 이런 데이터 분석 환경과 MLOps 인프라도 추가 해 보겠습니다. (보장은 못드립니다. 바쁘면 안할지도...)
