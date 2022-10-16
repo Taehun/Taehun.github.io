@@ -202,7 +202,7 @@ XAI는 AI 모델이 특정 결정을 내린 원인과 그 작동 원리를 사�
 4. _배보다 배꼽이 커지지 않게 주의하세요._ MLOps 툴을 사용하는 하는 것은 ML 워크플로우를 자동화 하거나 최대한 편하게 만드는 것이 목적입니다. 무분별한 MLOps 툴 도입은 학습 리소스 낭비와 ML 시스템 복잡도만 높인다는 것을 잊지 마세요. 시험 운영 기간 동안 기존 대비 큰 개선점이 없다면 안쓰는 것이 정답입니다.
 5. _메인 툴을 정하세요._ [하이브리드 클라우드](https://www.vmware.com/kr/topics/glossary/content/hybrid-cloud.html) 환경에는 온프레미스 환경에 설치된 MLOps 툴과 공용 클라우드의 ML 서비스간에 겹치는 기능이 많습니다. 더구나 요즘 MLOps 툴들은 통합 솔루션을 지향하고 있어 위에 나열된 도구들 중에도 중복된 기능을 가진 것이 많습니다. 비용, 확장성, 고가용성, 관리용이성, 개발편의성 등을 고려하여 중복되는 기능은 어떤 도구를 메인으로 사용할지 결정해야 합니다.
 
-[![ML Lanscape](https://about.mlreef.com/images/blog/ml_landscape.png)](https://about.mlreef.com/blog/global-mlops-and-ml-tools-landscape)
+![ML Landscape](https://github.com/Taehun/taehun.github.io/blob/main/imgs/ml_landscape.png?raw=true)
 _<center>선택 장애를 일으키는 수많은 MLOps 도구들...AI/ML 분야의 또다른 겨울이 오지 않는 이상 줄어들것 같지는 않습니다.</center>_
 
 ## 더 읽을거리

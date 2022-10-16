@@ -14,7 +14,8 @@ DevOps 성숙도가 높은 기업이나 팀이라면 _IaC (Infrastructure as Cod
 
 <!--more-->
 
-![CDKTF](https://mktg-content-api-hashicorp.vercel.app/api/assets?product=tutorials&version=main&asset=public%2Fimg%2Fterraform%2Fcdktf%2Fterraform-as-platform.png)
+
+<img src="https://github.com/Taehun/taehun.github.io/blob/main/imgs/cdktf.png?raw=true" height="640" width="800"/>
 * CDKTF 개요 (_출처> [https://www.terraform.io/cdktf](https://www.terraform.io/cdktf)_ )
 
 ## CDKTF CLI 설치
