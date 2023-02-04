@@ -16,13 +16,13 @@ excerpt_separator: <!--more-->
 
 <!--more-->
 
-![ML_Expected_Plan](https://i0.wp.com/neptune.ai/wp-content/uploads/MLOps-architecture.jpg?resize=650%2C500&ssl=1)
+![ML_Expected_Plan](https://i0.wp.com/neptune.ai/wp-content/uploads/2022/10/MLOps-architecture.jpg?ssl=1)
 
 기존 소프트웨어에는 DevOps가 있고, 우리에게는 훨씬 더 중요한 MLOps가 있습니다. 프로젝트가 성공하려면 개발 및 프로덕션 워크로드에 적합한 최적의 MLOps 아키텍처가 필요합니다.
 
 아래 이미지는 전체 MLOps 커뮤니티에서 가장 유명한 다이어그램일 수 있으며, 가장 많이 참조되는 ML 논문 중 하나에서 가져온 것입니다.
 
-![MLOps_paper](https://i0.wp.com/neptune.ai/wp-content/uploads/Technical-debt-MLOps.png?resize=1024%2C602&ssl=1)
+![MLOps_paper](https://i0.wp.com/neptune.ai/wp-content/uploads/2022/10/Technical-debt-MLOps.png?ssl=1)
 
 이 다이어그램은 프로덕션 레벨의 머신러닝 시스템에는 학습 알고리즘을 설계하고 코드를 작성하는 것 이상의 것이 있다는 것을 알려줍니다. 프로젝트에 가장 적합한 아키텍처를 선택하고 설계할 수 있다는 것은 종종 머신러닝 실험과 운영간의 차이를 메우는 것이며, 궁극적으로 ML 시스템의 숨겨진 기술적 부채를 갚는 것입니다.
 
@@ -38,7 +38,7 @@ excerpt_separator: <!--more-->
 
 머신러닝 프로젝트의 작업들을 생각해보면 다음과 같은 매우 상세한 워크플로우가 될 수 있습니다:
 
-![ML_workflow](https://i0.wp.com/neptune.ai/wp-content/uploads/MLLifecycle.png?resize=1024%2C400&ssl=1)
+![ML_workflow](https://i0.wp.com/neptune.ai/wp-content/uploads/2022/10/MLLifecycle.png?ssl=1)
 
 사실, 이와 같은 워크플로를 사용하여 이미 모델을 개발했으며 모델을 배포하고 성능 저하, 확장성, 속도, 유지 관리등과 같은 프로덕션 문제에 대해서만 대비하고자 할수도 있습니다.
 
@@ -50,7 +50,7 @@ excerpt_separator: <!--more-->
 
 아래는 프로젝트에 적합한 아키텍처를 찾을 때 볼 수 있는 복잡한 그림입니다 (복잡해 보이는 아키텍처이지만 지속적인 가치를 제공하는 프로덕션 등급 머신러닝 시스템을 구축하는 데 필요한 모든 것을 고려하지 않고 있습니다).
 
-![ML-systems](https://i0.wp.com/neptune.ai/wp-content/uploads/MLLifecycle_robust-4.png?resize=1024%2C624&ssl=1)
+![ML-systems](https://i0.wp.com/neptune.ai/wp-content/uploads/2022/10/MLLifecycle_robust-4.png?ssl=1)
 
 고려할 사항이 참 많네요! 보시다시피 시스템의 머신러닝(ML) 섹션과 시스템 운영(Ops) 섹션이 있습니다. 둘 다 함께 머신러닝 시스템의 아키텍처를 정의합니다.
 
@@ -74,7 +74,7 @@ MLOps의 아키텍처 패턴은 학습 및 서빙 설계에 관한 것입니다.
 
 ##### 1. 이벤트 기반 학습 아키텍처 (push-based)
 
-![Push-based training architecture](https://i0.wp.com/neptune.ai/wp-content/uploads/push_based_training_aarch.png?resize=682%2C322&ssl=1)
+![Push-based training architecture](https://i0.wp.com/neptune.ai/wp-content/uploads/2022/10/push_based_training_aarch.png?ssl=1)
 
 데이터 웨어하우스로의 데이터 스트리밍와 같은 특정 이벤트로 다음과 같은 트리거 구성 요소가 켜지는 이벤트 기반 시나리오에 대한 학습 아키텍처:
 
@@ -85,13 +85,13 @@ MLOps의 아키텍처 패턴은 학습 및 서빙 설계에 관한 것입니다.
 
 ##### 2. 오케스트레이션된 풀 기반 (pull-based) 학습 아키텍처
 
-![Pull-based training architecture](https://i0.wp.com/neptune.ai/wp-content/uploads/orchesrated_training_arch.png?resize=661%2C322&ssl=1)
+![Pull-based training architecture](https://i0.wp.com/neptune.ai/wp-content/uploads/2022/10/orchesrated_training_arch.png?ssl=1)
 
 일정 간격으로 모델을 재학습해야 하는 시나리오에 대한 학습 아키텍처. 데이터는 웨어하우스에서 대기하고 있으며, 워크플로우 오케스트레이션 도구를 사용하여 추출 및 처리를 예약하고, 새로운 데이터에 대한 모델의 재학습을 실시합니다. 이 아키텍처는 특히 사용자가 계정에 로그인할 때 미리 계산된 추천 사항을 제공하는 콘텐츠 추천 엔진(노래 또는 기사용)과 같이 실시간 점수가 필요하지 않은 문제에 유용합니다.
 
 ##### 3. 메시지 기반 (message-based) 학습 아키텍처
 
-![Message-based training architecture ](https://i0.wp.com/neptune.ai/wp-content/uploads/message_based_training_arch.png?resize=701%2C402&ssl=1)
+![Message-based training architecture](https://i0.wp.com/neptune.ai/wp-content/uploads/2022/10/message_based_training_arch.png?ssl=1)
 
 이러한 학습 아키텍처는 지속적인 모델 학습이 필요할 때 유용합니다. 예를 들어:
 
@@ -111,7 +111,7 @@ MLOps의 아키텍처 패턴은 학습 및 서빙 설계에 관한 것입니다.
 
 다음은 정적 학습을 위한 레퍼런스 아키텍처입니다. 한 번 학습하고 가끔씩 재학습합니다.
 
-![Static training architecture](https://i0.wp.com/neptune.ai/wp-content/uploads/Static_training_arch.png?resize=451%2C351&ssl=1)
+![Static training architecture](https://i0.wp.com/neptune.ai/wp-content/uploads/2022/10/Static_training_arch.png?ssl=1)
 
 ### 서빙 아키텍처
 
@@ -125,13 +125,13 @@ MLOps의 아키텍처 패턴은 학습 및 서빙 설계에 관한 것입니다.
 
 이것은 프로덕션에서 검증된 모델을 제공하는 데 사용할 수 있는 가장 간단한 아키텍처입니다. 기본적으로 모델은 오프라인에서 추론을 수행하고 주문형(on-demand) 서비스를 제공할 수 있는 데이터 저장소에 결과를 저장합니다.
 
-![batch_serving](https://i0.wp.com/neptune.ai/wp-content/uploads/batch_architecture.png?resize=492%2C331&ssl=1)
+![batch_serving](https://i0.wp.com/neptune.ai/wp-content/uploads/2022/10/batch_architecture.png?ssl=1)
 
 요구 사항에 몇 초 또는 몇 분 안에 클라이언트에게 추론 결과를 제공하지 않아도 되면 이러한 종류의 서빙 패턴을 사용할 수 있습니다. 일반적인 사용 사례는 콘텐츠 추천 시스템(사용자가 계정에 로그인하거나 애플리케이션을 열기 전에 추천을 미리 계산함)입니다.
 
 #### 온라인/실시간 아키텍처 패턴
 
-![Online/real-time serving](https://i0.wp.com/neptune.ai/wp-content/uploads/online_serving_arch-1.png?resize=502%2C331&ssl=1)
+![Online/real-time serving](https://i0.wp.com/neptune.ai/wp-content/uploads/2022/10/online_serving_arch-1.png?ssl=1)
 
 매우 최소한의 지연(몇 초 또는 몇 분 이내)으로 사용자에게 모델 추론 결과를 제공해야 하는 시나리오가 있습니다. 사용자가 요청할 때 실시간 추론을 제공하기 위한 온라인 서빙 아키텍처를 고려할 수 있습니다.
 
@@ -198,7 +198,7 @@ AWS에서 개발한 Well-Architected 솔루션의 5대 요소를 채택합니다
 
 ### 프로젝트: 뉴스 기사 추천 시스템
 
-![news article recommendation system](https://i0.wp.com/neptune.ai/wp-content/uploads/MLOps-architecture-recommender.png?resize=512%2C339&ssl=1)
+![news article recommendation system](https://i0.wp.com/neptune.ai/wp-content/uploads/2022/10/MLOps-architecture-recommender.png?resize=512%2C339&ssl=1)
 
 컨텐츠 추천 시스템은 사용자가 플랫폼에 더 많은 비용을 지출하도록 기업이 관련 컨텐츠에 계속 관여할 수 있도록 도움을 줍니다. 특히 항상 고객 참여를 높이는 것이 목표였던 미디어에서는 더욱 그렇습니다.
 
@@ -319,7 +319,7 @@ _요구 사항: 이 서비스는 모바일 애플리케이션이나 웹사이트
 
 위에 나열된 목표, 요구사항 및 스펙을 기반으로 시스템에 대한 아래 구조를 만들 수 있습니다. 도구 또는 구현에 대한 언급이 전혀 없다는 것을 알 수 있습니다. 그렇습니다! 이것은 비즈니스 목표와 최종 사용자를 염두에 둔 시스템 설계에 관한 것입니다. 아키텍처를 설계할 때는 가능한 한 기술에 구애받지 않고 요구사항과 스펙에만 집중해야 합니다.
 
-![Defining system structure](https://i0.wp.com/neptune.ai/wp-content/uploads/News-Recommendation-System.png?resize=1024%2C744&ssl=1)
+![Defining system structure](https://i0.wp.com/neptune.ai/wp-content/uploads/2022/10/News-Recommendation-System.png?ssl=1)
 
 시스템의 구조는 비즈니스 목표에 기반한 요구사항과 스펙을 기반으로 합니다. 시스템 구조를 제대로 잡을 수 있게 되면, 이제 구현할 도구와 기술을 선택할 수 있습니다.
 
@@ -483,7 +483,7 @@ _주의: 머신러닝에 k8s(Kubernetes)를 사용한다는 Kubeflow를 알고 �
 - 프로젝트에 대한 최적의 MLOps 아키텍처를 선택하기 위한 프레임워크,
 - 그리고 가장 중요한 것은:
 
-![With an MLOps Architecture](https://i0.wp.com/neptune.ai/wp-content/uploads/mlops_arch_meme_2.png?resize=1024%2C574&ssl=1)
+![With an MLOps Architecture](https://i0.wp.com/neptune.ai/wp-content/uploads/2022/10/mlops_arch_meme_2.png?ssl=1)
 
 읽어주셔서 감사합니다!
 
